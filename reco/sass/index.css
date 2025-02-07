@@ -1,0 +1,268 @@
+button {
+  border: 0;
+  padding: 5px 5px;
+  color: white;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #303030;
+}
+
+.btn-arrow {
+  background-color: #F2542D;
+  height: 40px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.block-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 37px;
+}
+.block-title h2 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #F2542D;
+  position: relative;
+  margin: 0 0 3px;
+  text-transform: uppercase;
+}
+.block-title h2::before {
+  content: "";
+  height: 1px;
+  width: 421px;
+  background-color: #BBBBBB;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-right: 41px;
+}
+.block-title h2::after {
+  content: "";
+  height: 1px;
+  width: 421px;
+  background-color: #BBBBBB;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: 41px;
+}
+.block-title p {
+  font-size: 24px;
+  color: #562C2C;
+}
+
+.block-card {
+  display: flex;
+  margin-bottom: 80px;
+}
+.block-card_item {
+  margin-right: 24px;
+}
+.block-card_item:last-child {
+  margin-top: 45px;
+  margin-right: 0;
+}
+.block-card_item:first-child {
+  margin-top: 45px;
+}
+.block-card_item--image {
+  display: flex;
+  margin-bottom: 24px;
+}
+.block-card_item span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #F2542D;
+  margin-bottom: 3px;
+}
+.block-card_item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.block-card_item p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.button-card {
+  font-size: 18px;
+  font-weight: 500;
+  color: #562C2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 249px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid #BBBBBB;
+  border-radius: 50px;
+}
+.button-card span {
+  margin: 0 0 0 11px;
+}
+.button-card span::before {
+  color: #0E9594;
+}
+
+.bg-banner {
+  background-image: url("../assets/img/bg.jpg");
+}
+
+.block-map img {
+  border-radius: 20px;
+}
+
+.map-container {
+  padding: 3.2rem 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+.map-container img {
+  width: 100%;
+}
+.map-container .point {
+  cursor: pointer;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: all 0.3s ease;
+}
+.map-container .point img {
+  will-change: transform, box-shadow;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  animation: pulse 3s infinite;
+}
+.map-container .point:hover img {
+  animation: none;
+  transition: all 0.3s ease;
+  transform: scale3D(1.35, 1.35, 1);
+}
+.map-container .pin1 {
+  top: 54%;
+  left: 24%;
+}
+.map-container .pin2 {
+  top: 64%;
+  left: 28%;
+}
+.map-container .pin3 {
+  top: 77%;
+  left: 27%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0px, -1px);
+  }
+  20% {
+    transform: translate(0px, -3px);
+  }
+  60% {
+    transform: translate(0px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  color: #562C2C;
+}
+
+.container-width {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #562C2C;
+  opacity: 0.7;
+}
+.main-header_inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-height: 56px;
+  padding: 15.5px 0;
+}
+.main-header .logo {
+  margin-right: 94px;
+}
+.main-header .logo a {
+  display: flex;
+}
+.main-header .logo a img {
+  max-width: 105px;
+  max-height: 23px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-header nav {
+  display: flex;
+}
+.main-header nav a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin-right: 149px;
+}
+.main-header .right ul {
+  display: flex;
+  align-items: center;
+}
+.main-header .right ul li {
+  margin-right: 16px;
+}
+.main-header .right ul li:last-child {
+  margin-right: 0;
+}
+.main-header .right ul li a {
+  display: flex;
+}
+.main-header .right ul li a span {
+  font-size: 28px;
+}/*# sourceMappingURL=index.css.map */

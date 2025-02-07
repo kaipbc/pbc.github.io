@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/index.css">
+    <link rel="stylesheet" href="./sass/icons.css">
+    <link rel="stylesheet" href="./assets/fonts/icons.css">
+    <link rel="stylesheet" href="./assets/fonts/popin.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="main-header_inner container-width">
+                <h1 class="logo">
+                    <a href="#"><img src="./assets/img/logo.png"></a>
+                </h1>
+                <nav>
+                    <a href="#">Tire 1</a>
+                    <a href="#">Tire 2</a>
+                    <a href="#">Tire 3</a>
+                    <a href="#">Tire 4</a>
+                </nav>
+                <div class="right">
+                    <ul>
+                        <li><a href="#"><span class="icon-header-moun"></span></a></li>
+                        <li><a href="#"><span class="icon-header-fishing"></span></a></li>
+                        <li><a href="#"><span class="icon-header-crosshair"></span></a></li>
+                        <li class="btn-arrow"><a href="#"></a><span class="icon-icon-arrowright"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner-header">
+            <img 
+                srcset="./assets/img/hero-banner-mobile.jpg 100w, 
+                ./assets/img/hero-banner-tablet.jpg 200w, 
+                ./assets/img/hero-banner.jpg 400w
+                "
+                sizes="(max-width:768px) 100px ,(max-width:991px) 200px, 400px"
+                src="./assets/img/hero-banner.jpg"
+            />
+            <div class="banner-header_navbar">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-width">
+            <article class="block-title">
+                <h2>Tire Bloc 1</h2>
+                <p>Sous-tire Bloc 1</p>
+            </article>
+            <div class="block-card">
+                <div class="block-card_item">
+                    <div class="block-card_item--image">
+                        <img src="./assets/img/image-card.jpg">
+                    </div>
+                    <div class="block-card_item--content">
+                        <span>Case Title</span>
+                        <h3>Case sous-tire</h3>
+                        <p>Chaque sentier vous conduit à des panorama epoútoùlants, chaque instant...</p>
+                        <button class="button-card">Forfait<span class="icon-icon-arrowright"></span></button>
+                    </div>
+                </div>
+                <div class="block-card_item">
+                    <div class="block-card_item--image">
+                        <img src="./assets/img/img-card2.jpg">
+                    </div>
+                    <div class="block-card_item--content">
+                        <span>Case Title</span>
+                        <h3>Case sous-tire</h3>
+                        <p>Chaque sentier vous conduit à des panorama epoútoùlants, chaque instant...</p>
+                        <button class="button-card">Forfait<span class="icon-icon-arrowright"></span></button>
+                    </div>
+                </div>
+                <div class="block-card_item">
+                    <div class="block-card_item--image">
+                        <img src="./assets/img/img-card3.jpg">
+                    </div>
+                    <div class="block-card_item--content">
+                        <span>Case Title</span>
+                        <h3>Case sous-tire</h3>
+                        <p>Chaque sentier vous conduit à des panorama epoútoùlants, chaque instant...</p>
+                        <button class="button-card">Forfait<span class="icon-icon-arrowright"></span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-banner">
+            
+            <div class="block-map container container-width">
+                <article class="block-title">
+                    <h2>Tire Bloc 2</h2>
+                </article>
+                <div class="block-map_content map-container">
+                    <img src="./assets/img/map.jpg">
+                    <div class="point pin1 tippy"><img src="./assets/img/mappin1.png"></div>
+                    <div class="point pin2 tippy"><img src="./assets/img/mappin2.png"></div>
+                    <div class="point pin3 tippy"><img src="./assets/img/mappin3.png"></div>
+                </div>
+            </div>            
+        </section>
+          
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

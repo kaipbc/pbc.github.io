@@ -1,0 +1,159 @@
+.btn-arrow {
+  background-color: $main-color;
+  height: 40px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+//Block title
+
+.block-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 37px;
+  h2 {
+    font-size: 52px;
+    font-weight: 600;
+    color: $main-color;
+    position: relative;
+    margin: 0 0 3px;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      height: 1px;
+      width: 421px;
+      background-color: #BBBBBB;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-right: 41px;
+    }
+    &::after {
+      content: "";
+      height: 1px;
+      width: 421px;
+      background-color: #BBBBBB;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-left: 41px;
+    }
+  }
+  p {
+    font-size: 24px;
+    color: $sub-color-text;
+  }
+}
+
+//Block card
+.block-card {
+  display: flex;
+  margin-bottom: 80px;
+  &_item {
+    margin-right: 24px;
+    &:last-child {
+      margin-top: 45px;
+      margin-right: 0;
+    }
+    &:first-child {
+      margin-top: 45px;
+    }
+    &--image {
+      display: flex;
+      margin-bottom: 24px;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      color: $main-color;
+      margin-bottom: 3px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 16px; 
+    }
+  }
+}
+
+.button-card {
+  font-size: 18px;
+  font-weight: 500;
+  color: #562C2C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 249px;
+  height: 44px;
+  background: transparent;
+  border: 2px solid #BBBBBB;
+  border-radius: 50px;
+  span {
+    margin: 0 0 0 11px;
+    &::before {
+      color: #0E9594;
+    }
+  }
+}
+
+//Block map
+.bg-banner {
+  background-image: url("../assets/img/bg.jpg");
+}
+.block-map {
+  img {
+    border-radius: 20px;
+  }
+}
+$primary: #00acc1;
+
+.map-container {
+  padding: 3.2rem .8rem;
+  position: relative;
+  display: inline-block;
+  img {
+    width: 100%;
+  }
+  .point {
+    cursor: pointer;
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: all .3s ease;
+    img {
+      will-change: transform, box-shadow;
+      transform: translate(-50%, -50%);
+      transition: all .3s ease;
+      animation: pulse 3s infinite;
+    }
+    &:hover {
+      img {
+        animation: none;
+        transition: all .3s ease;
+        transform:  scale3D(1.35, 1.35 ,1);
+      }
+      
+    }
+  }
+  .pin1 { top: 54%; left: 24%; }
+  .pin2 { top: 64%; left: 28%; }
+  .pin3 { top: 77%; left: 27%; }
+}
+
+@keyframes pulse {
+  0% {transform: translate(0px, -1px);}
+  20% {transform: translate(0px, -3px);}
+  60% {transform: translate(0px, -5px);}
+  100% {transform: translate(0px, 0);} 
+}
+
+
+
